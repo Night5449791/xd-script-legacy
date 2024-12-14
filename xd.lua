@@ -1,6 +1,6 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()--OrionLib
 
-print("script has been executed")
+print("script has been executed")--确保脚本注入成功
 
 local Window = OrionLib:MakeWindow({Name = "xd脚本", HidePremium = false, SaveConfig = true, ConfigFolder = "xdscript"})
 
@@ -17,7 +17,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("xd脚本，免费开源的脚本（懒的做白名单）","QQ群961624908")
+Tab:AddParagraph("xd脚本，免费开源的脚本（懒的做白名单）","QQ群1009875775")
 
 Tab:AddButton({
 	Name = "飞行 V3",
@@ -71,6 +71,28 @@ Tab:AddButton({
 	Name = "FDP-REBOOT",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Night5449791/FDP-REBOOT/refs/heads/main/Protected_3946246775852348.txt"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "军事大亨(military tycoon)",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "micorockslol123(英文)",
+	Callback = function()
+        _G.BaseChoice = "Military Base" -- Military Base, Drone Base, Nuke Base
+loadstring(game:HttpGet("https://raw.githubusercontent.com/micorockslol123/military-tycoon/main/main"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "LytexWZ(英文,卡密在剪切板)",
+	Callback = function()
+      		setclipboard("hkFtuiUNsNKrgREFQkjmf4ky")
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/LytexWZ/Military-tycoonGUI/refs/heads/main/Main.lua"))()
   	end    
 })
 
