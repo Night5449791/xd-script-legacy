@@ -1,12 +1,12 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()--OrionLib
 
-print("script has been executed")--确保脚本注入成功
+print("script has been executed")
 
 local Window = OrionLib:MakeWindow({Name = "xd脚本", HidePremium = false, SaveConfig = true, ConfigFolder = "xdscript"})
 
 OrionLib:MakeNotification({
 	Name = "注入成功",
-	Content = "nil",
+	Content = "V1.1",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
