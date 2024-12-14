@@ -6,7 +6,7 @@ local Window = OrionLib:MakeWindow({Name = "xd脚本", HidePremium = false, Save
 
 OrionLib:MakeNotification({
 	Name = "注入成功",
-	Content = "V1.1",
+	Content = "V1.2",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -47,6 +47,13 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddButton({
+	Name = "MS PAINT V3(旧版)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
+  	end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "Doors",
 	Icon = "rbxassetid://4483345998",
@@ -55,7 +62,7 @@ local Tab = Window:MakeTab({
 
 
 Tab:AddButton({
-	Name = "MS PAINT（旧版）",
+	Name = "MS PAINT V3（旧版）",
 	Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
   	end    
@@ -93,6 +100,19 @@ Tab:AddButton({
 	Callback = function()
       		setclipboard("hkFtuiUNsNKrgREFQkjmf4ky")
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/LytexWZ/Military-tycoonGUI/refs/heads/main/Main.lua"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Grace",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "MS PAINT V3(旧版)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
   	end    
 })
 
