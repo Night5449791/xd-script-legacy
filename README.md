@@ -1,1 +1,1 @@
-XD脚本,中文脚本中心.
+delete this
