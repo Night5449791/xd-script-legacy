@@ -1,5 +1,3 @@
---你们好啊我是AshenPame,今天我玩Ohio了(V1.4)
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()--OrionLib
 
 print("script has been executed")
@@ -8,7 +6,7 @@ local Window = OrionLib:MakeWindow({Name = "xd脚本", HidePremium = false, Save
 
 OrionLib:MakeNotification({
 	Name = "注入成功",
-	Content = "V1.4",
+	Content = "V1.5",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -220,17 +218,17 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Tab = Window:MakeTab({
-	Name = "菜单设置",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
 Tab:AddButton({
 	Name = "typical-overk1ll(英文)",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/typical-overk1ll/scripts/refs/heads/main/Greenville"))()
   	end
+})
+
+local Tab = Window:MakeTab({
+	Name = "菜单设置",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 
 Tab:AddButton({
