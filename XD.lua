@@ -1,12 +1,12 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()--OrionLib
 
-print("13843731734")--random number to print
+print("script has been executed")
 
 local Window = OrionLib:MakeWindow({Name = "xd脚本", HidePremium = false, SaveConfig = true, ConfigFolder = "xdscript"})
 
 OrionLib:MakeNotification({
 	Name = "注入成功",
-	Content = "V1.6",
+	Content = "V1.7预测试",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -149,6 +149,33 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
+	Name = "TR:UD",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Nexer Hub",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Pro666Pro/NexerHub-TR-UD/refs/heads/main/NHTRUD.lua"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Forsaken",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "GOA_HUB",
+	Callback = function()
+        setclipboard("Free301")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nevcit/GOA_HUB/refs/heads/main/Forsaken"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
 	Name = "Evade",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -157,36 +184,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Tbao143",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))("t.me/DingeScripts")
-  	end    
-})
-
-local Tab = Window:MakeTab({
-	Name = "Murderes VS Sheriffs Duels",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "Sheeshablee73",
-	Callback = function()
-        local scriptURL = 'https://raw.githubusercontent.com/Sheeshablee73/Scriptss/main/MVSD%20UPD2.lua'
-local response = game:HttpGet(scriptURL)
-local executeScript = loadstring(response)
-executeScript("t.me/DingaScripts")
-  	end    
-})
-
-local Tab = Window:MakeTab({
-	Name = "菜单设置",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "ui摧毁",
-	Callback = function()
-        OrionLib:Destroy()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))()
   	end    
 })
 
